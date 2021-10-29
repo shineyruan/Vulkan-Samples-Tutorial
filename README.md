@@ -1,4 +1,4 @@
-# CIS 565 Vulkan Samples
+# Vulkan Samples
 
 This respository contains Vulkan sample material for CIS 565 at the University of Pennsylvania.
 
