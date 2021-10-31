@@ -2,9 +2,9 @@
 
 #ifdef _WIN32
 #pragma comment(linker, "/subsystem:console")
-#include <windows.h>
 #include <fcntl.h>
 #include <io.h>
+#include <windows.h>
 #elif defined(__linux__)
 #include <xcb/xcb.h>
 #endif

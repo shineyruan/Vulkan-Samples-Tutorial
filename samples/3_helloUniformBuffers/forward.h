@@ -1,7 +1,7 @@
 #pragma once
 
-#include <bitset>
 #include <array>
+#include <bitset>
 
 enum QueueFlags {
   Graphics,
@@ -11,13 +11,13 @@ enum QueueFlags {
 };
 
 enum QueueFlagBit {
-    GraphicsBit = 1 << 0,
-    ComputeBit = 1 << 1,
-    TransferBit = 1 << 2,
-    PresentBit = 1 << 3,
+  GraphicsBit = 1 << 0,
+  ComputeBit  = 1 << 1,
+  TransferBit = 1 << 2,
+  PresentBit  = 1 << 3,
 };
 
-using QueueFlagBits = std::bitset<sizeof(QueueFlags)>;
+using QueueFlagBits      = std::bitset<sizeof(QueueFlags)>;
 using QueueFamilyIndices = std::array<int, sizeof(QueueFlags)>;
 
 class VulkanInstance;
